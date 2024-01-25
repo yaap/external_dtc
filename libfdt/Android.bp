@@ -13,6 +13,9 @@ cc_library {
         "-Wno-macro-redefined",
         "-Wno-sign-compare",
     ],
+    lto: {
+        never: true,
+    },
     srcs: [
         "fdt.c",
         "fdt_check.c",
